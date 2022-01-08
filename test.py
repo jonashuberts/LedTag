@@ -56,7 +56,7 @@ time.sleep(8)
 
 # text with Border = 1
 os.system('sudo python3 /home/pi/badge/led-badge-11x44.py -a 1 "Border: true"')
-time.sleep(8)
+time.sleep(6)
 
 # text with speed = 8
 os.system('sudo python3 /home/pi/badge/led-badge-11x44.py -s 8 "Speed: 8"')
