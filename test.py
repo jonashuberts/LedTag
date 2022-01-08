@@ -51,8 +51,8 @@ os.system('sudo python3 /home/pi/badge/led-badge-11x44.py -m 8 "M: 8"')
 time.sleep(8)
 
 # text with blink = 1
-os.system('sudo python3 /home/pi/badge/led-badge-11x44.py -b 1 "Blk: 1"')
-time.sleep(16)
+os.system('sudo python3 /home/pi/badge/led-badge-11x44.py -b 1 "Blink: 1"')
+time.sleep(4)
 
 # text with Border = 1
 os.system('sudo python3 /home/pi/badge/led-badge-11x44.py -a 1 "Border: 1"')
