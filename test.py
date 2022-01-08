@@ -38,6 +38,26 @@ Example combining image and text:
 import time
 import os
 
+# loads the text 'Hello World!' as the first message, and scrolls it from right to left (default scroll mode=0) and speed 4 (default)
 os.system('sudo python3 /home/pi/badge/led-badge-11x44.py "Hello World!"')
 time.sleep(4)
+
+# text with image
 os.system('sudo python3 /home/pi/badge/led-badge-11x44.py "text1:/home/pi/LedTag/images/test.png:text2"')
+time.sleep(4)
+
+# text with speed = 8
+os.system('sudo python3 /home/pi/badge/led-badge-11x44.py -s 8 "Speed: 8"')
+time.sleep(4)
+
+# text with mode = 8
+os.system('sudo python3 /home/pi/badge/led-badge-11x44.py -m 8 "Mode: 8"')
+time.sleep(4)
+
+# text with blink = 2
+os.system('sudo python3 /home/pi/badge/led-badge-11x44.py -b 2 "Blink: 2"')
+time.sleep(4)
+
+# text with Border = 2
+os.system('sudo python3 /home/pi/badge/led-badge-11x44.py -a 2 "Border: 2"')
+time.sleep(4)
