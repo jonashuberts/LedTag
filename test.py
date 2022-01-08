@@ -44,19 +44,19 @@ time.sleep(4)
 
 # text with image
 os.system('sudo python3 /home/pi/badge/led-badge-11x44.py "text1:/home/pi/LedTag/images/test.png:text2"')
-time.sleep(4)
+time.sleep(8)
 
 # text with mode = 8
 os.system('sudo python3 /home/pi/badge/led-badge-11x44.py -m 8 "M: 8"')
-time.sleep(4)
+time.sleep(8)
 
 # text with blink = 1
 os.system('sudo python3 /home/pi/badge/led-badge-11x44.py -b 1 "Blink: true"')
-time.sleep(4)
+time.sleep(8)
 
 # text with Border = 1
 os.system('sudo python3 /home/pi/badge/led-badge-11x44.py -a 1 "Border: true"')
-time.sleep(4)
+time.sleep(8)
 
 # text with speed = 8
 os.system('sudo python3 /home/pi/badge/led-badge-11x44.py -s 8 "Speed: 8"')
