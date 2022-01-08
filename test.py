@@ -40,4 +40,4 @@ import os
 
 os.system('sudo python3 /home/pi/badge/led-badge-11x44.py "Hello World!"')
 time.sleep(4)
-os.system('sudo python3 /home/pi/badge/led-badge-11x44.py "text1:/home/pi/LedTag/test.png:text2"')
+os.system('sudo python3 /home/pi/badge/led-badge-11x44.py "text1:/home/pi/LedTag/images/test.png:text2"')
