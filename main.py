@@ -1,14 +1,14 @@
 import time
 import os
-from datetime import datetime as dt
+from datetime import datetime
 
-minute = dt.now().minute
+minute = datetime.now().minute
 
 while True:
-    if minute < dt.now().minute:
-        os.system('sudo python3 /home/pi/badge/led-badge-11x44.py "%s"' % minute)
-        minute = dt.now().minute 
-        print("update")
+    if minute < datetime.now().minute:
+        text = str(datetime.now().strftime('%d.%m.%Y %H:%M'))
+        print(text)
+        os.system('sudo python3 /home/pi/badge/led-badge-11x44.py "%s"' % text)
+        minute = datetime.now().minute 
     else:
-       print(".... wait ...")
-       time.sleep(10)
+        pass
