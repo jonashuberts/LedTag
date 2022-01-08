@@ -52,7 +52,7 @@ time.sleep(8)
 
 # text with blink = 1
 os.system('sudo python3 /home/pi/badge/led-badge-11x44.py -b 1 "Blink: true"')
-time.sleep(8)
+time.sleep(12)
 
 # text with Border = 1
 os.system('sudo python3 /home/pi/badge/led-badge-11x44.py -a 1 "Border: true"')
