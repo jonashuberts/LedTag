@@ -47,7 +47,7 @@ os.system('sudo python3 /home/pi/badge/led-badge-11x44.py "text1:/home/pi/LedTag
 time.sleep(4)
 
 # text with mode = 8
-os.system('sudo python3 /home/pi/badge/led-badge-11x44.py -m 8 "Mode: 8"')
+os.system('sudo python3 /home/pi/badge/led-badge-11x44.py -m 8 "M: 8"')
 time.sleep(4)
 
 # text with blink = 1
