@@ -19,7 +19,7 @@ while True:
 
         response = requests.get(url)
         data = json.loads(response.text)
-        temp = str(round(data["current"]["temp"]), 1)
+        temp = str(round(data["current"]["temp"], 1))
         
         text = time + " " + temp
         print(text)
