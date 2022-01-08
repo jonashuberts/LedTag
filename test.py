@@ -46,10 +46,6 @@ time.sleep(4)
 os.system('sudo python3 /home/pi/badge/led-badge-11x44.py "text1:/home/pi/LedTag/images/test.png:text2"')
 time.sleep(4)
 
-# text with speed = 8
-os.system('sudo python3 /home/pi/badge/led-badge-11x44.py -s 8 "Speed: 8"')
-time.sleep(0.5)
-
 # text with mode = 8
 os.system('sudo python3 /home/pi/badge/led-badge-11x44.py -m 8 "Mode: 8"')
 time.sleep(4)
@@ -61,3 +57,7 @@ time.sleep(4)
 # text with Border = 1
 os.system('sudo python3 /home/pi/badge/led-badge-11x44.py -a 1 "Border: true"')
 time.sleep(4)
+
+# text with speed = 8
+os.system('sudo python3 /home/pi/badge/led-badge-11x44.py -s 8 "Speed: 8"')
+time.sleep(1)
