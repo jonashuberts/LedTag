@@ -10,11 +10,6 @@ lat = "48.035264"
 lon = "10.861981"
 url = "https://api.openweathermap.org/data/2.5/onecall?lat=%s&lon=%s&appid=%s&units=metric" % (lat, lon, api_key)
 
-response = requests.get(url)
-data = json.loads(response.text)
-temp = data["current"]["dt"]
-print(temp)
-
 #time
 minute = datetime.now().minute
 
@@ -24,7 +19,7 @@ while True:
 
         response = requests.get(url)
         data = json.loads(response.text)
-        temp = str(data["current"]["dt"])
+        temp = str(round(data["current"]["temp"]), 1)
         
         text = time + " " + temp
         print(text)
